@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="icon" href="Images/Icon3.png" />
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Tracker</title>
+  </head>
+  <body>
+    <header id="Title-container"></header>
+    <main class="Main-Container">
+      <img id="Reader" src="Images/read.png" alt="Reader" />
+      <section class="List-input">
+        <form id="books-form">
+          <input
+            type="text"
+            name="user-input"
+            id="user-input"
+            placeholder="Write the title and author."
+          />
+          <input type="submit" id="submit-button" />
+        </form>
+        <div id="manu">
+          <label for="books-read">Books I've Read</label>
+          <input type="checkbox" name="books-read" id="books-read" />
+          <label for="sort-by">Sort by:</label>
+          <select name="sort-by" id="sort-by">
+            <option value="time-asc">Date added ascending</option>
+            <option value="time-desc">Date added descending</option>
+            <option value="alpha-asc">Alphabetically ascending</option>
+            <option value="alpha-desc">Alphabetically descending</option>
+          </select>
+        </div>
+      </section>
+      <section id="List-Container"></section>
+    </main>
+  </body>
+</html>
