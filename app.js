@@ -41,10 +41,10 @@ function buildHeader() {
   underTitle.textContent = "Smoothly track your favorite books!";
   // make a image with music
   const image = document.createElement("img");
-  image.src = "/Images/Book5.jpg";
+  image.src = "./Images/Book5.jpg";
   image.classList.add("image");
   // make new object with Audio
-  const audio = new Audio("/Audio/Chopin.mp3");
+  const audio = new Audio("./Audio/Chopin.mp3");
   image.addEventListener("click", () => {
     if (audio.paused) {
       audio.play();
